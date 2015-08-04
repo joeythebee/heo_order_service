@@ -1,0 +1,8 @@
+<?xml version="1.0"  encoding="ISO-8859-1"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+ 
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+<!-- Set up the path to the custom override descriptor, 
+  relative to your $(jetty.home) directory or to the current directory -->
+  <Set name="overrideDescriptor"><SystemProperty name="jetty.home" default="."/>src/main/webapp/WEB-INF/override-web.xml</Set>	
+</Configure>

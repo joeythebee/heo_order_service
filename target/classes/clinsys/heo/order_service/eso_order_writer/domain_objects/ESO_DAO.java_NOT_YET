@@ -1,0 +1,31 @@
+package clinsys.heo.order_service.eso_order_writer.domain_objects;
+
+import javax.annotation.Resource;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+
+
+
+public class ESO_DAO {
+
+	private static final Logger log = LoggerFactory.getLogger(ESO_DAO.class);
+
+	//@Resource(name="ESONamedJDBCTemplate")
+	private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+	public void setNamedParameterJDBCTemplate(NamedParameterJdbcTemplate nt){
+		namedParameterJdbcTemplate = nt;
+	}
+	
+	//Get Staff ID From RACF
+	
+	//Get Patient ID (cpi_seq) from mrn + case
+	
+	//Insert list of orders
+	
+	//Insert Order
+	
+	//Insert list of prompts
+	
+}
